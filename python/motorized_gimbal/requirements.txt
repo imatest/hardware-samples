@@ -1,0 +1,10 @@
+# Requirements for motorized_gimbal_stray_light_sample.py
+# Need Python 3.8 or 3.9
+# Example usage from terminal om this directory: pip install -r requirements.exe
+
+
+# Need zaber-motion (ASCII) library for Python 
+zaber-motion 
+
+# (Optional, for in-script analysis) Need Imatest IT Library
+# For details see: https://www.imatest.com/docs/imatest-it-instructions/#Python 
