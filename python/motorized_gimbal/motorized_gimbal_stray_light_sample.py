@@ -343,8 +343,6 @@ def run_sample_mg_capture_plan(
                         }
                     )
                 )
-                # TODO replace JSON placeholder with official configuration file
-                # TODO convert angles to absolute
 
         # Move both axes back to the center-aligned/reference position
         axis_az.move_absolute(
@@ -368,7 +366,7 @@ def run_sample_mg_capture_plan(
         # Save the capture_config dictionary as a JSON-encoded text file to the output_dir
         # This file will contain key information about each capture, pertinent to analysis and plotting of the data
         print("Writing configuration file...")
-        capture_config_file_path = pathlib.Path(output_dir, "config.json")
+        capture_config_file_path = pathlib.Path(output_dir, "config.slconf")
         with capture_config_file_path.open(mode="w") as capture_config_file:
             json.dump(capture_config, capture_config_file)
 
@@ -378,7 +376,7 @@ def run_sample_mg_capture_plan(
 def main():
     # First define the Path (pathlib.Path) to an output directory, used for saving images and output files
     # (Paste your directory path between the two quotes)
-    output_dir = pathlib.Path(r"")  # Example: WindowsPath('C:/path/to/output_dir')
+    output_dir = pathlib.Path(r"C:/path/to/existing/output_dir")  # Example: WindowsPath('C:/path/to/output_dir')
     # If left empty or if the path doesn't exist, the run_sample_mg_capture_plan() function will not perform image
     # capture at each Motorized Gimbal position
 
