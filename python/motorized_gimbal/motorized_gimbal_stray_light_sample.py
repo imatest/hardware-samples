@@ -423,7 +423,7 @@ def main():
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     """
     # Path to the stray light config file generated from run_sample_mg_capture_plan()
-    config_file_path = pathlib.Path(output_dir, "config.json")
+    config_file_path = pathlib.Path(output_dir, "config.slconf")
 
     # Path to an "imatest-v2.ini" file that defines the [straylight] settings to use for analysis
     ini_file_path = pathlib.Path(
